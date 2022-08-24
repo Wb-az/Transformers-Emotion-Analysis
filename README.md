@@ -1,8 +1,5 @@
-# Emotion Analysis
-Emotion analysis of tweets with customised transformers text classifiers - BERT, DistilBERT and RoBERTa
 
-<h1><div style="text-align: center;"> Emotion Analysis with Customised Transformer Classifiers 
-</div></h1>
+<h1><div style="text-align: center;"> Emotion analysis of tweets with customised transformers classifiers </div></h1>
 <h3><div style="text-align: center"> BERT, DistilBERT & RoBERTa </div></h3>
 
 
