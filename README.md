@@ -279,7 +279,7 @@ dated in 2016 (available to the public) when most of the emoticons were manually
 automatically predicted by the text input. A further recomendation is to use ourmodels with more 
 recent dataset to be able to identyfing potential flaws and opporrunities to improve the models' 
 performance. In summary the main challeges of this work were the class imbalance, labels and 
-mismatch emoticons.<\p>
+mismatch emoticons.</p>
 
 <h3><div> References </div></h3>
 
