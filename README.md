@@ -15,7 +15,7 @@ emotions (such as
 happiness, sadness, and anger). We implemented emotion classifiers 
 using the fine-tuning paradigm from pretrained Bidirectional Encoder Representations (BERT), a 
 distilled version or BERT (DistilBERT) and Robustly Optimized approach (RoBERTa) base models. In 
-total, we built an experimental setup of 24 models decribed in section 2.<\p>
+total, we built an experimental setup of 24 models decribed in section 2.</p>
 
 <h2><div>2. Methods</div></h2>
 
@@ -23,7 +23,7 @@ total, we built an experimental setup of 24 models decribed in section 2.<\p>
 
 <p>
 The tweets were processed to convert any emoticons and emojis into text. Table 1 
-shows the original class distribution in the datset before data processing and feature enginering.<\p>
+shows the original class distribution in the datset before data processing and feature enginering.</p>
 
 <div style="margin-left: auto;
             margin-right: auto;
@@ -164,7 +164,7 @@ classification of emotional content in tweets.</p>
 
 **Table 4.** Performance of each classifier measured in six metrics and training required to 
 achieve the best performance. BA Balanced accuracy and MCC Mathew's correlation coefficient. Epoch denotes the number of 
-epochs required to achieve the maximum validation accuracy
+epochs required to achieve the maximum validation accuracy.
 
 <div style="margin-left: auto;
             margin-right: auto;
