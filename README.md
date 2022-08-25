@@ -5,6 +5,7 @@
 
 <h2><div>1. Introduction</div></h2>
 
+<p>
 Natural language processing (NLP), is a branch of 
 artificial intelligence involved with human and computer interactions using the 
 natural language in a meaningful manner. In social media a wide range of emotions are expressed 
@@ -14,14 +15,15 @@ emotions (such as
 happiness, sadness, and anger). We implemented emotion classifiers 
 using the fine-tuning paradigm from pretrained Bidirectional Encoder Representations (BERT), a 
 distilled version or BERT (DistilBERT) and Robustly Optimized approach (RoBERTa) base models. In 
-total, we built an experimental setup of 24 models decribed in section 2. 
+total, we built an experimental setup of 24 models decribed in section 2.<\p>
 
 <h2><div>2. Methods</div></h2>
 
 <h3><div>2.1 Data processing and feature selection </div></h3>
 
+<p>
 The tweets were processed to convert any emoticons and emojis into text. Table 1 
-shows the original class distribution in the datset before data processing and feature enginering. 
+shows the original class distribution in the datset before data processing and feature enginering.<\p>
 
 <div style="margin-left: auto;
             margin-right: auto;
@@ -55,25 +57,34 @@ pretrained word vectors from two models 'word2vec-google-news-300'. The emotions
 similarity were groupped except if the emotions had opposite meaning i.e., love and hate. In addition, we dropped the 'worry' instaces since they 
 appeart to 
 be related to all the other emotions. The final dataset contained in total 31,541 tweet of 
-emotial content (Fig 1). 
+emotial content (Figure 1). 
 
-<p
-<img src='/plots/dist_1.png' height='200' title='dist1' alt='distribution1'/>  <img src='/plots/dist_emot.png' height='200' title='dist2' alt='distribution'/> </p>
-
-Fig.2 (a) Initial emotion distribution in the dataset. (b) Emotions distribution aftercomputation of similarity and aggregation of emotions.
+<p align="center">
+<img src='/plots/dist_1.png' height='200' title='dist1' alt='distribution1'/></p>
+<p align="center">
+(a)
+</p>
+<p align="center">
+<img src='/plots/dist_emot.png' height='200' title='dist2' alt='distribution'/></p>  
+<p align="center">
+(b)
+</p>
+<p align="center">
+Figure 1. (a) Initial emotion distribution in the dataset. (b) Emotions distribution aftercomputation of similarity and aggregation of emotions.</p>
 
 
 
 <h3><div>2.2 Classifiers </div></h3>
-
+<p>
 We built the classifiers by using the base models of BERT, DistilBERT and RoBERTa and 
-a two dense layer classification head with 768 and 512 hidden units.
+a two dense layer classification head with 768 and 512 hidden units.</p>
 
 <h3><div>2.3 Experimental setup</div></h3>
 
+<p>
 The experimental setup for this work is described in Table 1. The experiments models
 were designed by combining four factors: deep neural network architecture (classifier), the loss 
-function (objective), learning rate and learning policy (scheduler). A total of 24 for experiments were built and evaluated (3×2×2×2).
+function (objective), learning rate and learning policy (scheduler). A total of 24 for experiments were built and evaluated (3×2×2×2).</p>
 
 
 **Table 2.**
@@ -116,9 +127,10 @@ and weigheted cross entropy loss functions to be minimised.
 
 <h3><div>2.4 Training, validation and test approch </div></h3>
 
+<p>
 The dataset was split by label stratification in three subset with proportion of 80:10:10 for 
 training, validation and test respectively. Table 3 shows the fixed hyperparameters used to fine 
-tune all models.
+tune all models.</p>
 
 **Table 3.**
 Fixed experimental hyperparameters to fine-tune all experiments (classifiers).
@@ -134,19 +146,21 @@ Fixed experimental hyperparameters to fine-tune all experiments (classifiers).
 
 <h3><div>2.4 Evaluation </div></h3>
 
+<p>
 The models were evaluated on the test dataset with six metrics: accuracy, balanced accuracy (BA),
 F1 score, recall precision and Matthew's correlation coefficient (MCC). In addition, the 
 epochs required to achieve the best performance were logged. The performance of each model per 
 metric was further ranked, followed by omnibus Friedman test and McNemar 
-pair-wise comparison with uncertainty of 0.05 ($\alpha=0.05$). 
+pair-wise comparison with uncertainty of 0.05 ($\alpha=0.05$). </p>
 
+<p>
 All code was written in python usin PyTorch framework and HuggingFace, mxlextend, sckitlearn, 
-gensim, torchmetrics, seaborn, matplotlib, SciPy and scikit-posthocs libraries.
+gensim, torchmetrics, seaborn, matplotlib, SciPy and scikit-posthocs libraries.</p>
 
 <h2><div>3. Results </div></h2>
 
-Tables 4 shows the performace of the experiments in each evaluation metric for the
-classification of emotional content in tweets. 
+<p>Tables 4 shows the performace of the experiments in each evaluation metric for the
+classification of emotional content in tweets.</p> 
 
 **Table 4.** Performance of each classifier measured in six metrics and training required to 
 achieve the best performance. BA Balanced accuracy and MCC Mathew's correlation coefficient. Epoch denotes the number of 
@@ -186,8 +200,8 @@ epochs required to achieve the maximum validation accuracy
 
 <h3><div>3.2 Ranking </div></h3>
 
-Tables 5 shows the ranking of the experiments in each evaluation metric for the
-classification of emotional content in tweets. 
+<p>Tables 5 shows the ranking of the experiments in each evaluation metric for the
+classification of emotional content in tweets.</p>
 
 **Table 5.** Ranking of 7 metrics to evaluate the performance of each classifier. 
 BA Balanced accuracy and Mathew's correlation coefficient (MCC).
@@ -230,7 +244,7 @@ BA Balanced accuracy and Mathew's correlation coefficient (MCC).
 <h3><div>3.4 Statistical comparison </div></h3>
 
 <p>After applying the Friedman test to the prediction, we rejected the null hypothesis that the data came from the same distribution.
-Then we compared the models using the McNemar pairwise. The comparison is shown in figure 2.</P>
+Then we compared the models using the McNemar pairwise. The comparison is shown in Figure 2.</p>
 
 
 <p align="center">
@@ -252,6 +266,7 @@ From all metrics used to evaluate the models' performace we considered the MCC t
 
 <h2><div>4. Discussion </div></h2>
 
+<p>
 In spite of the limitations of the dataset we obtained accuraccy of 65.4% and MCC of 45.5% in 
 the MCC. We identified the best classifiers by using non-parametric statistics and further 
 posthoc comparison of each model. In this work we attempted to maintain as much emotional 
@@ -264,7 +279,7 @@ dated in 2016 (available to the public) when most of the emoticons were manually
 automatically predicted by the text input. A further recomendation is to use ourmodels with more 
 recent dataset to be able to identyfing potential flaws and opporrunities to improve the models' 
 performance. In summary the main challeges of this work were the class imbalance, labels and 
-mismatch emoticons. 
+mismatch emoticons.<\p>
 
 <h3><div> References </div></h3>
 
