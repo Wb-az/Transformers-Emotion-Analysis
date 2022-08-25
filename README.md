@@ -210,8 +210,8 @@ BA Balanced accuracy and Mathew's correlation coefficient (MCC).
             margin-right: auto;
             width: 100%">
 
-| Exp |  Network   | Loss |    lr | scheduler  |   Acc    |    BA    |    F1    |   Rec    |   Prec   |   MCC    |  Epoch   |
-|:----|:----------:|:----:|------:|:----------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
+| Exp |  Network   | Loss |   lr  | scheduler  |   Acc    |    BA    |    F1    |   Rec    |   Prec   |   MCC    |  Epoch   |
+|:----|:----------:|:----:|:-----:|:----------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
 | 1   |    BERT    |  CE  | 1e-05 | one\_cycle |   5\.0   |  17\.0   |   5\.0   |  17\.0   |   7\.0   |   5\.0   |  12\.5   |
 | 2   | DistilBERT |  CE  | 1e-05 | one\_cycle |  10\.0   |  22\.0   |  19\.0   |  22\.0   |   8\.0   |  15\.0   |  18\.5   |
 | 3   |  RoBERTa   |  CE  | 1e-05 | one\_cycle |   6\.0   |  19\.0   |   6\.0   |  19\.0   |   6\.0   |   7\.0   |  18\.5   |
