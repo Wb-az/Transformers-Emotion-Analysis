@@ -144,7 +144,7 @@ Fixed experimental hyperparameters to fine-tune all experiments (classifiers).
 
 </div>
 
-<h3><div>2.4 Evaluation </div></h3>
+<h3><div>2.5 Evaluation </div></h3>
 
 <p>
 The models were evaluated on the test dataset with six metrics: accuracy, balanced accuracy (BA),
