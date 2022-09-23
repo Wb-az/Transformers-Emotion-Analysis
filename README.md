@@ -159,6 +159,8 @@ gensim, torchmetrics, seaborn, matplotlib, SciPy and scikit-posthocs libraries.<
 
 <h2><div>3. Results </div></h2>
 
+<h3><div>3.1 Evaluation Metrics </div></h3>
+
 <p>Tables 4 shows the performace of the experiments in each evaluation metric for the
 classification of emotional content in tweets.</p> 
 
@@ -241,7 +243,7 @@ BA Balanced accuracy and Mathew's correlation coefficient (MCC).
 
 </div>
 
-<h3><div>3.4 Statistical comparison </div></h3>
+<h3><div>3.3 Statistical comparison </div></h3>
 
 <p>After applying the Friedman test to the prediction, we rejected the null hypothesis that the data came from the same distribution.
 Then we compared the models using the McNemar pairwise. The comparison is shown in Figure 2.</p>
